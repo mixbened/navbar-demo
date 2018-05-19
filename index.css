@@ -1,0 +1,90 @@
+body {
+    font-family: Avenir;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #2fcc98;
+    color: #eee;
+}
+
+.navContainer {
+    margin-right: 1em;
+}
+
+.navContainer > ul {
+    display: flex;
+}
+
+.logoContainer {
+    padding: 1em;
+}
+
+.navContainer > ul > a {
+    padding: 1em;
+    transition: 0.3s;
+}
+
+.iconButton {
+    display: none;
+    margin: 1em;
+    background: transparent;
+    color: #eee;
+    border: 1.5px solid #eee;
+    border-radius: 3px;
+    padding: 0 1.2em;
+}
+
+.navContainer > ul > a:hover {
+    color: #2fcc98;
+    background: #eee;
+}
+
+.sideMenu {
+    width: 50%;
+    height: 100vh;
+    background: #2fcc98;
+    position: absolute;
+    right: -50%;
+    text-align: center;
+    color: #eee;
+    transition: 0.8s;
+}
+
+.sideMenu > h3 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+.sideMenu > ul {
+    margin: 2em 0;
+}
+
+.sideMenu > ul > a > li {
+    padding: 1em 2em;
+}
+
+.sideMenu > ul > a >li:active {
+    background: #eee;
+    color: #2fcc98;
+}
+
+.showMenu {
+    right: 0;
+}
+
+.back {
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+@media (max-width: 568px){
+    .navContainer {
+        display: none;
+    }
+    .iconButton {
+        display: block;
+    }
+}
+
